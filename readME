@@ -1,0 +1,12 @@
+Problem Statement:
+Design an Auction House Management System that allows participants to bid on various items and artworks. The system should handle participant registrations, auction creation, bidding, and provide an end-of-day summary of all activities.
+
+ Features of Application:
+1.Participants: The system should support multiple participants. Each participant will have a name, balance, phone number, account details, and gender. Participants should be able to register and display their information.
+2.Auctions: The system should support two types of auctions: "ItemAuction" and "ArtAuction." Each auction will have a title, a starting bid, and a current bid. 
+3.Bidding: Participants should be able to place bids on open auctions. A bid must be higher than the current bid and should not exceed the participant's balance.
+4.Auction Closing: The system should allow the organizer to close an auction manually. If an auction is closed without any bids, it should be marked as closed with no winner.
+5.End-of-Day Summary: At the end of the day, the system should provide a summary of all participants, their remaining balances, all auctions and their current bids, and the winners of closed auctions.
+6.Exception Handling: Implement exception classes for specific errors that may occur during bidding, such as "InsufficientBalanceException" for bids higher than the participant's balance and "InvalidBidException" for bids lower or equal to the current bid. An "AuctionClosedException" should also be used when attempting to bid on a closed auction.
+7.Auction Factory: Implement an AuctionFactory class to create instances of different types of auctions based on the provided input.
+8.User Interaction: The system should provide a menu-driven interface to allow users to interact with the Auction House. The menu should include options to place bids, close auctions, display available auctions, display participant information, and view the end-of-day summary.
